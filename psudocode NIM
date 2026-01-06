@@ -1,0 +1,22 @@
+psudocode NIM 
+mulai
+Siapkan array nama, berat, dan totalHarga
+Siapkan hargaPerKg = 10000
+
+Tampilkan judul aplikasi
+Minta user memasukkan jumlah pelanggan
+
+Ulangi dari i = 0 sampai jumlah pelanggan - 1:
+    Minta user memasukkan nama pelanggan
+    Minta user memasukkan berat laundry
+
+    Jika berat > 0:
+        totalHarga[i] = berat × hargaPerKg
+    Jika tidak:
+        totalHarga[i] = 0
+
+Tampilkan judul daftar laundry
+Ulangi dari i = 0 sampai jumlah pelanggan - 1:
+    Tampilkan nama, berat, dan total harga
+
+Selesai
