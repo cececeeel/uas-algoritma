@@ -1,0 +1,37 @@
+psudocode system voting sederhana 
+
+Mulai
+    Deklarasi jumlahPemilih
+    Deklarasi pilihan
+    Deklarasi array suara[2] ← {0, 0}
+
+    Tampilkan "Masukkan jumlah pemilih"
+    Input jumlahPemilih
+
+    Untuk i dari 1 sampai jumlahPemilih
+        Tampilkan "1. Kandidat A"
+        Tampilkan "2. Kandidat B"
+        Input pilihan
+
+        Jika pilihan = 1
+            suara[0] ← suara[0] + 1
+        Jika pilihan = 2
+            suara[1] ← suara[1] + 1
+        Jika selain itu
+            Tampilkan "Pilihan tidak valid"
+            i ← i - 1
+        EndIf
+    EndFor
+
+    Tampilkan "Hasil Voting"
+    Tampilkan suara Kandidat A
+    Tampilkan suara Kandidat B
+
+    Jika suara[0] > suara[1]
+        Tampilkan "Pemenang: Kandidat A"
+    Jika suara[1] > suara[0]
+        Tampilkan "Pemenang: Kandidat B"
+    Jika suara[0] = suara[1]
+        Tampilkan "Hasil Seri"
+    EndIf
+Selesai
